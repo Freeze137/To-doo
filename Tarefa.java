@@ -13,6 +13,12 @@ public class Tarefa {
         this.completa = false;
     }
 
+    public Tarefa(String titulo, String descricao) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.completa = false;
+    }
+
     public int getId() { return id; }
     public String getTitulo() { return titulo; }
     public void setTitulo(String titulo) { this.titulo = titulo; }
@@ -29,3 +35,4 @@ public class Tarefa {
                 " | Status: " + (completa ? "Concluída" : "Pendente");
     }
 }
+
