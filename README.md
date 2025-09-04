@@ -1,7 +1,24 @@
 # To-doo
 
-Projeto to-doo lista de afazeres com conceitos de POO e CRUD com armazenamento em memoria atraves de arraylist
-Com atributos de id, titulo , descricao completa e dataAgora... getters , setters e a classe tarefaservico responsavel por implementar operacoes de criar, listar , atualizar e remover tarefas com contador de IDS automatico para identificar cada tarefa
+Projeto de lista de afazeres (To-do List) desenvolvido em Java, utilizando conceitos de POO e CRUD, com armazenamento em memória através de⁠ ArrayList.
 
-classe principal CLI que tem q apresentar as opcoes de menu do usuario para interacao de servico podendo
-(Cadastrar, visualizar, editar, excluir e marcar tarefas completas)
+Funcionalidades
+•⁠  Cadastrar tarefas  
+•⁠  Listar tarefas  
+•⁠  ⁠Editar tarefas  
+•⁠  Excluir tarefas  
+•⁠  ⁠Marcar tarefas como concluídas  
+
+Estrutura do Projeto
+•⁠  ⁠Classe ⁠ Tarefa ⁠  
+  - Atributos: ⁠ id ⁠, ⁠ titulo ⁠, ⁠ descricao ⁠, ⁠ completa ⁠, ⁠ dataAgora ⁠  
+  - Métodos getters e setters  
+
+•⁠  ⁠Classe ⁠ TarefaServico ⁠ 
+  - Responsável pelas operações de criar, listar, atualizar e remover tarefas  
+  - Contador de IDs automáticos para identificar cada tarefa  
+
+•⁠  ⁠Classe Principal (CLI)  
+  - Exibe menu interativo no console  
+  - Integra os métodos de serviço  
+  - Permite interação do usuário para gerenciar tarefas  
