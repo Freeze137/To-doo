@@ -1,0 +1,27 @@
+# Pastas de build
+/bin/
+/build/
+/target/
+
+# Dependências locais (Maven)
+*.log
+*.tmp
+*.bak
+*.swp
+!.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos do Maven/Gradle
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+
+# IDEs
+/.idea/
+/*.iml
+/.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
