@@ -1,9 +1,10 @@
 package visao;
 
-import controle.TarefaServico;
-import modelo.Tarefa;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import controle.TarefaServico;
+import modelo.Tarefa;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,9 +19,8 @@ public class Main {
             System.out.println("3 - Editar tarefa");
             System.out.println("4 - Concluir tarefa");
             System.out.println("5 - Remover tarefa");
-            System.out.println("6 - Buscar tarefa por título");
-            System.out.println("7 - Filtrar tarefas por status");
-            System.out.println("0 - Sair");
+            System.out.println("6 - Buscar tarefa por título"); // removido e  atualizado para o 6 q ja faz a verificacao de status da tarefa
+            System.out.println("7 - Sair");
             System.out.print("Escolha: ");
             opcao = sc.nextInt();
             sc.nextLine();
@@ -55,27 +55,18 @@ public class Main {
                     Long idR = sc.nextLong(); sc.nextLine();
                     servico.remover(idR);
                     break;
-                case 6:
+                case 6: 
                     System.out.print("Digite palavra-chave: ");
                     String palavra = sc.nextLine();
                     ArrayList<Tarefa> buscadas = servico.buscarPorTitulo(palavra);
                     if (buscadas.isEmpty()) {
                         System.out.println("Nenhuma tarefa encontrada!");
                     } else {
+                        //  o método toString() mostra o status
                         for (Tarefa t : buscadas) System.out.println(t);
                     }
                     break;
-                case 7:
-                    System.out.print("Mostrar tarefas concluídas (s/n)? ");
-                    char resp = sc.nextLine().toLowerCase().charAt(0);
-                    boolean status = resp == 's';
-                    ArrayList<Tarefa> filtradas = servico.filtrarPorStatus(status);
-                    if (filtradas.isEmpty()) {
-                        System.out.println("Nenhuma tarefa encontrada!");
-                    } else {
-                        for (Tarefa t : filtradas) System.out.println(t);
-                    }
-                    break;
+                
                 case 0:
                     System.out.println("Saindo...");
                     break;
