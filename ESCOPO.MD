@@ -1,5 +1,4 @@
 Projeto: Gerenciador de Tarefas para Estudantes
-
 1. Visão Geral
 O projeto é uma ferramenta de gerenciamento de tarefas desenvolvida para estudantes, permitindo a organização de atividades acadêmicas para melhorar a produtividade e o controle de prazos.
 
@@ -17,26 +16,35 @@ Incentivar a frequência nas aulas, ajudando a evitar a reprovação por faltas.
 Promover o estudo contínuo, e não apenas a entrega de atividades por nota.
 
 5. Funcionalidades Principais
-Criar Tarefa: Adicionar uma nova tarefa com título e descrição.
-(O usuário poderá registrar uma nova atividade, informando um título para a tarefa, uma descrição detalhada e a disciplina à qual ela pertence. Opcionalmente, poderá adicionar uma data de entrega.)
+Criar Tarefa:
 
-Editar Tarefa: Modificar tarefas existentes.
-(Exibe todas as atividades cadastradas. Para facilitar a visualização, cada tarefa será apresentada com seu nome seguido pelo dia da semana correspondente entre parênteses.)
+O usuário poderá registrar uma nova atividade, informando um título, uma descrição detalhada, a disciplina à qual ela pertence e, opcionalmente, uma data de entrega.
 
-Listar Tarefas: Exibir todas as tarefas, mostrando seu status (pendente ou concluída).
-(Permite ao usuário alterar as informações de uma tarefa já registrada, como seu título, descrição, data de entrega ou a matéria associada.)
+Listar Tarefas:
 
-Concluir Tarefa: (Altera o status de uma tarefa para "Concluída", tirando-a da lista de pendências do aluno.)
+Exibe todas as atividades cadastradas, mostrando seu status (pendente ou concluída). Para facilitar a visualização, cada tarefa pode ser organizada por matéria ou data.
 
-Remover Tarefa: (Exclui permanentemente uma tarefa, útil para casos de cancelamento ou erro de cadastro.)
+Editar Tarefa:
 
-Buscar Tarefa: (Permite ao usuário encontrar rapidamente uma tarefa pelo título para verificar seu status (pendente ou concluída).)
+Permite ao usuário alterar as informações de uma tarefa já registrada, como seu título, descrição, data de entrega ou a matéria associada.
+
+Concluir Tarefa:
+
+Altera o status de uma tarefa para "Concluída", tirando-a da lista de pendências do aluno.
+
+Remover Tarefa:
+
+Exclui permanentemente uma tarefa, útil para casos de cancelamento ou erro de cadastro.
+
+Buscar Tarefa:
+
+Permite ao usuário encontrar rapidamente uma tarefa pelo título para verificar seu status.
 
 6. Ferramentas e Tecnologias
-Linguagem de Programação: Java
+   Linguagem de Programação: Java
 
-IDE (Ambiente de Desenvolvimento): Visual Studio Code (VSCode)
+   IDE (Ambiente de Desenvolvimento): Visual Studio Code (VSCode)
 
-Banco de Dados: SQL
+   Banco de Dados: SQL
 
-Controle de Versão: Git (usando GitHub e GitHub Desktop)
+   Controle de Versão: Git (usando GitHub e GitHub Desktop)
