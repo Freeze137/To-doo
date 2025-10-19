@@ -10,7 +10,7 @@ O público-alvo é qualquer instituição que necessita realizar as operações 
 O sistema resolve o problema da gestão manual ou ineficiente dos dados de alunos. Ele padroniza as operações essenciais para o ciclo de vida de um registro, garantindo que as informações dos alunos possam ser criadas, consultadas, modificadas e excluídas de forma organizada e persistente em um banco de dados.
 
 4.Objetivo do Sistema
-O objetivo principal é oferecer uma aplicação que demonstre a capacidade de realizar as quatro operações essenciais (CRUD) sobre a entidade `Aluno`. Isso é alcançado por meio de uma interface de terminal que interage com uma camada de serviço (`AlunoServico`) para persistir os dados no banco.
+O objetivo principal é oferecer uma aplicação que demonstre a capacidade de realizar as quatro operações essenciais (CRUD) sobre a entidade Aluno. Isso é alcançado por meio de uma interface de terminal que interage com uma camada de serviço (AlunoServico) para persistir os dados no banco.
 
  5.Funcionalidades do Sistema (CRUD)
 O sistema oferece as seguintes funcionalidades básicas, apresentadas ao usuário via menu (classe `Main`):
