@@ -16,9 +16,13 @@ O objetivo principal é oferecer uma aplicação que demonstre a capacidade de r
 O sistema oferece as seguintes funcionalidades básicas, apresentadas ao usuário via menu (classe `Main`):
 
 CREATE(Criar) = Opção 1: Cadastrar Aluno -> Adiciona um novo registro de aluno ao banco de dados. 
+
 READ (Ler) = Opção 2: Listar Alunos -> Consulta e exibe todos os dados dos alunos existentes no banco. 
+
 READ (Ler) = Opção 3: Buscar por CPF -> Busca e retorna os dados de um aluno específico, utilizando o CPF como critério de busca. 
+
 UPDATE (Atualizar) = Opção 4: Editar Aluno -> Permite modificar um registro de aluno já existente no banco de dados (ex: alterar turno ou telefone).
+
 DELETE (Deletar) = Opção 5: Remover Aluno -> Remove permanentemente um registro de aluno do banco de dados.
 
 6. Ferramentas e Tecnologias
