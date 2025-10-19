@@ -10,7 +10,7 @@ Editar Aluno (UPDATE): Modifica os dados de um aluno existente (ex: turno, telef
 Remover Aluno (DELETE): Remove permanentemente um aluno do banco de dados.
 
 Estrutura do Projeto (Pacotes):
-Classe Aluno (Pacote `modelo`):
+Classe Aluno (Pacote modelo):
  Serve como o molde para criar objetos que representam um aluno.
  Atributos: id (PK), nome, cpf , idade, serie, turno, telefone.
  Métodos: Possui *getters* e *setters* para manipular os atributos.
