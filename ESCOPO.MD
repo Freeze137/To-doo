@@ -1,50 +1,29 @@
-Projeto: Gerenciador de Tarefas para Estudantes
-1. Visão Geral
-O projeto é uma ferramenta de gerenciamento de tarefas desenvolvida para estudantes, permitindo a organização de atividades acadêmicas para melhorar a produtividade e o controle de prazos.
+Projeto: Sistema de Matrícula Escolar:
 
-2. O Problema
-A rotina acadêmica exige que os alunos gerenciem múltiplos prazos de trabalhos, provas e tarefas de diversas disciplinas. Sem uma ferramenta centralizada, é comum que esqueçam de atividades importantes, o que impacta negativamente suas notas.
+1.Visão Geral Este é um projeto de um sistema de Matrícula Escolar desenvolvido para gerenciar o ciclo de vida completo do dado do aluno, utilizando o CRUD (Create, Read, Update, Delete). O sistema foi feito em pacotes (modelo, controle e visao) para separar as responsabilidades e implementar a lógica de negócio e a interação com o banco de dados MySQL.
+2.Público-Alvo O público-alvo é qualquer instituição que necessita realizar as operações administrativas de cadastro e gerenciamento de alunos como escolas, uninversidades ou academias.
 
-3. Público-Alvo
-O sistema é projetado para estudantes de todos os níveis, com foco especial em alunos do ensino médio e universitários, que enfrentam uma carga de estudos mais intensa e se beneficiam de uma ferramenta para otimizar sua organização.
+3.O Problema a Ser Resolvido O sistema resolve o problema da gestão manual ou ineficiente dos dados de alunos. Ele padroniza as operações essenciais para o ciclo de vida de um registro, garantindo que as informações dos alunos possam ser criadas, consultadas, modificadas e excluídas de forma organizada e persistente em um banco de dados.
 
-4. Objetivos do Projeto
-Reduzir o esquecimento de tarefas e trabalhos, facilitando o controle de prazos.
+4.Objetivo do Sistema O objetivo principal é oferecer uma aplicação que demonstre a capacidade de realizar as quatro operações essenciais (CRUD) sobre a entidade Aluno. Isso é alcançado por meio de uma interface de terminal que interage com uma camada de serviço (AlunoServico) para persistir os dados no banco.
 
-Incentivar a frequência nas aulas, ajudando a evitar a reprovação por faltas.
+5.Funcionalidades do Sistema (CRUD) O sistema oferece as seguintes funcionalidades básicas, apresentadas ao usuário via menu (classe Main):
 
-Promover o estudo contínuo, e não apenas a entrega de atividades por nota.
+CREATE(Criar) = Opção 1: Cadastrar Aluno -> Adiciona um novo registro de aluno ao banco de dados.
 
-5. Funcionalidades Principais
-Criar Tarefa:
+READ (Ler) = Opção 2: Listar Alunos -> Consulta e exibe todos os dados dos alunos existentes no banco.
 
-O usuário poderá registrar uma nova atividade, informando um título, uma descrição detalhada, a disciplina à qual ela pertence e, opcionalmente, uma data de entrega.
+READ (Ler) = Opção 3: Buscar por CPF -> Busca e retorna os dados de um aluno específico, utilizando o CPF como critério de busca.
 
-Listar Tarefas:
+UPDATE (Atualizar) = Opção 4: Editar Aluno -> Permite modificar um registro de aluno já existente no banco de dados (ex: alterar turno ou telefone).
 
-Exibe todas as atividades cadastradas, mostrando seu status (pendente ou concluída). Para facilitar a visualização, cada tarefa pode ser organizada por matéria ou data.
+DELETE (Deletar) = Opção 5: Remover Aluno -> Remove permanentemente um registro de aluno do banco de dados.
 
-Editar Tarefa:
+6.Ferramentas e Tecnologias Linguagem de Programação: Java
 
-Permite ao usuário alterar as informações de uma tarefa já registrada, como seu título, descrição, data de entrega ou a matéria associada.
+IDE (Ambiente de Desenvolvimento): Visual Studio Code (VSCode)
 
-Concluir Tarefa:
+Banco de Dados: SQL
 
-Altera o status de uma tarefa para "Concluída", tirando-a da lista de pendências do aluno.
-
-Remover Tarefa:
-
-Exclui permanentemente uma tarefa, útil para casos de cancelamento ou erro de cadastro.
-
-Buscar Tarefa:
-
-Permite ao usuário encontrar rapidamente uma tarefa pelo título para verificar seu status.
-
-6. Ferramentas e Tecnologias
-   Linguagem de Programação: Java
-
-   IDE (Ambiente de Desenvolvimento): Visual Studio Code (VSCode)
-
-   Banco de Dados: SQL
-
-   Controle de Versão: Git (usando GitHub e GitHub Desktop)
+Controle de Versão: Git (usando GitHub e GitHub Desktop)
+   
