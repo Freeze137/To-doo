@@ -1,25 +1,15 @@
 # To-doo
 
-Projeto de lista de afazeres (To-do List) desenvolvido em Java, utilizando conceitos de POO e CRUD, com armazenamento em memória através de⁠ ArrayList.
+Projeto de Cadastro de Alunos (Matrícula Escolar)
 
-Funcionalidades
-•⁠  Cadastrar tarefas  
-•⁠  Listar tarefas  
-•⁠  ⁠Editar tarefas  
-•⁠  Excluir tarefas  
-•⁠  ⁠Marcar tarefas como concluídas  
+Este é um projeto simples de CRUD (Criar, Ler, Atualizar, Deletar) para um sistema de matrícula escolar, desenvolvido em Java e utilizando um banco de dados MySQL para persistência dos dados.
 
-Estrutura do Projeto
-•⁠  ⁠Classe ⁠ Tarefa ⁠  
-  - Atributos: ⁠ id ⁠, ⁠ titulo ⁠, ⁠ descricao ⁠, ⁠ completa ⁠, ⁠ dataAgora ⁠  
-  - Métodos getters e setters  
+1-Funcionalidades (CRUD): Cadastrar Aluno (CREATE): Adiciona um novo registro de aluno ao banco de dados. Listar Alunos (READ): Consulta e exibe todos os alunos registrados. Buscar Aluno por CPF (READ): Busca um aluno específico para consulta. Editar Aluno (UPDATE): Modifica os dados de um aluno existente (ex: turno, telefone). Remover Aluno (DELETE): Remove permanentemente um aluno do banco de dados.
 
-•⁠  ⁠Classe ⁠ TarefaServico ⁠ 
-  - Responsável pelas operações de criar, listar, atualizar e remover tarefas  
-  - Contador de IDs automáticos para identificar cada tarefa  
+2-Estrutura do Projeto (Pacotes): Classe Aluno (Pacote modelo): Serve como o molde para criar objetos que representam um aluno. Atributos: id (PK), nome, cpf , idade, serie, turno, telefone. Métodos: Possui getters e setters para manipular os atributos.
 
-•⁠  ⁠Classe Principal (CLI)  
-  - Exibe menu interativo no console  
-  - Integra os métodos de serviço  
-  - Permite interação do usuário para gerenciar tarefas  
-fim
+Classe AlunoServico (Pacote controle): É o "cérebro" da aplicação.]Implementa toda a lógica CRUD. Responsabilidade: Recebe os dados da interface e interage com o banco de dados (via Conexao) para executar comandos SQL.
+
+Classe Conexao (Pacote controle): Classe utilitária responsável por estabelecer e retornar a conexão com o banco de dados MySQL.
+
+Classe Main (Pacote visao): É o ponto de entrada do programa e a interface de terminal (CLI). Responsabilidade: Exibe o menu, lê a entrada do usuário, e chama os métodos do AlunoServico.
