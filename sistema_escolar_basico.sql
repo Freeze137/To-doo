@@ -1,31 +1,25 @@
--- Criar banco de dados
-CREATE DATABASE sistema_escolar_basico;
-USE sistema_escolar_basico;
+-- 1. Criar o banco de dados
+CREATE DATABASE IF NOT EXISTS matricula_escolar;
+USE matricula_escolar;
 
--- Tabela DISCIPLINA
-CREATE TABLE disciplina (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    professor VARCHAR(100) NOT NULL,
-    dia_da_aula DATE NOT NULL
+-- 2. Criar tabela Aluno
+CREATE TABLE IF NOT EXISTS aluno (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    cpf VARCHAR(14) NOT NULL UNIQUE,
+    idade INT NOT NULL,
+    serie VARCHAR(50) NOT NULL,
+    turno VARCHAR(20) NOT NULL,
+    telefone VARCHAR(20)
 );
 
--- Tabela TAREFA
-CREATE TABLE tarefa (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(150) NOT NULL,
-    descricao TEXT,
-    status BOOLEAN DEFAULT FALSE,
-    data_entrega DATE,
-    disciplina_id INT NOT NULL,
-    FOREIGN KEY (disciplina_id) REFERENCES disciplina(id)
-);
+-- 3. Inserir alguns alunos de teste
+INSERT INTO aluno (nome, cpf, idade, serie, turno, telefone) VALUES
+('Pedro Amaral', '123.456.789-00', 10, 'Fundamental 1', 'Matutino', '61999990000'),
+('Maria Silva', '987.654.321-00', 14, 'Fundamental 2', 'Vespertino', '61988881111'),
+('João Souza', '111.222.333-44', 16, 'Médio', 'Matutino', '61977772222');
 
--- Inserindo alguns dados de exemplo
-INSERT INTO disciplina (nome, professor, dia_da_aula) VALUES
-('Estrutura de Dados', 'Maria Souza', '2025-09-25'),
-('Banco de Dados', 'Carlos Lima', '2025-09-26');
-
-INSERT INTO tarefa (titulo, descricao, status, data_entrega, disciplina_id) VALUES
-('Implementar lista encadeada', 'Fazer em C usando ponteiros', FALSE, '2025-10-01', 1),
-('Criar DER', 'Modelo de entidades e relacionamentos', TRUE, '2025-09-20', 2);
+-- 4. Consultar todos os alunos
+SELECT * FROM aluno;
+SHOW DATABASES;
+USE matricula_escolar;
